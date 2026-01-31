@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Grocery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Outfit:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">Grocery</a>
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#menu" class="nav-link">Items</a></li>
+            <li><a href="#special" class="nav-link">Orders</a></li> 
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="login.html" class="nav-link">Login</a></li>
+          </ul>
+          <div class="nav-buttons">
+            
+            <a href="#special" class="nav-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+            <a href="items.html" class="btn btn-primary">Order Now</a>
+          </div>
+          <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-subtitle">Welcome to</p>
+          <h1 class="hero-title">
+            Online Grocery Shopping <span>&</span> Everyday Essentials
+          </h1>
+          <p class="hero-description">
+            Enjoy the ease of doorstep delivery combined with quality you can trust. Shop fresh, fast, and hassle-free—your pantry’s best friend is just a click away.
+          </p>
+          <div class="hero-buttons">
+            <a href="#menu" class="btn btn-secondary">View Items</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <i class="fas fa-chevron-down"></i>
+        Scroll Down
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <p class="section-subtitle">Our Story</p>
+            <h2 class="section-title">Online Grocery, Elevated</h2>
+            <p class="about-text">
+              Our journey began with a simple idea: grocery shopping should be convenient without compromising on quality. 
+              We combine the ease of online access with the reliability of top-quality products, delivering a smarter, faster way to shop.
+            </p>
+            <p class="about-text">
+              Our commitment to excellence shines through—from our carefully selected suppliers to the seamless
+               shopping experience we provide. Every item is chosen with care to ensure freshness, value, and satisfaction at your doorstep.
+            </p>
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Premium Quality</h4>
+                  <p class="about-feature-text">
+                    Fresh, locally sourced produce and trusted household essentials.
+                  </p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Thoughtfully Curated</h4>
+                  <p class="about-feature-text">
+                    Every product is handpicked for quality, value, and reliability.
+                  </p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Fast & Convenient</h4>
+                  <p class="about-feature-text">
+                    Easy-to-use platform with reliable doorstep delivery.
+                  </p>
+                </div>
+              </div>
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Care in Every Order</h4>
+                  <p class="about-feature-text">
+                    We pack and deliver your groceries as if they were our own.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="about-img"></div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="menu-header">
+          <p class="menu-subtitle">Our Products</p>
+          <h2 class="menu-title">Fresh Groceries, Delivered to Your Door</h2>
+          <p class="menu-description">
+            Explore our carefully curated selection of everyday essentials—from farm-fresh produce to pantry staples. We source high-quality items to make your grocery shopping convenient, reliable, and satisfying.
+          </p>
+        </div>
+       
+        <div class="menu-grid">
+  <!-- Item 1 -->
+  <div class="menu-item">
+    <div class="menu-item-img" style="background-image: url('images/rice.jpg');"></div>
+    <div class="menu-item-content">
+      <h3 class="menu-item-name">Premium White Rice</h3>
+      <p class="menu-item-description">Locally sourced, soft, and perfect for everyday meals.</p>
+      <div class="menu-item-bottom">
+        <div class="menu-item-price">₱45.00 / kg</div>
+        <div class="menu-item-btn"><i class="fas fa-plus"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="menu-item">
+    <div class="menu-item-img" style="background-image: url('images/eggs.jpg');"></div>
+    <div class="menu-item-content">
+      <h3 class="menu-item-name">Fresh Farm Eggs</h3>
+      <p class="menu-item-description">Grade A, free-range brown eggs packed with nutrition.</p>
+      <div class="menu-item-bottom">
+        <div class="menu-item-price">₱90.00 / dozen</div>
+        <div class="menu-item-btn"><i class="fas fa-plus"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item 3 -->
+  <div class="menu-item">
+    <div class="menu-item-img" style="background-image: url('images/milk.jpg');"></div>
+    <div class="menu-item-content">
+      <h3 class="menu-item-name">Whole Milk</h3>
+      <p class="menu-item-description">Creamy and rich, perfect for drinking or cooking.</p>
+      <div class="menu-item-bottom">
+        <div class="menu-item-price">₱70.00 / liter</div>
+        <div class="menu-item-btn"><i class="fas fa-plus"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item 4 -->
+  <div class="menu-item">
+    <div class="menu-item-img" style="background-image: url('images/pandesal.jpg');"></div>
+    <div class="menu-item-content">
+      <h3 class="menu-item-name">Fresh Pandesal</h3>
+      <p class="menu-item-description">Soft and fluffy Filipino breakfast rolls.</p>
+      <div class="menu-item-bottom">
+        <div class="menu-item-price">₱3.00 / piece</div>
+        <div class="menu-item-btn"><i class="fas fa-plus"></i></div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- Item 6 -->
+  <div class="menu-item">
+    <div class="menu-item-img" style="background-image: url('images/onions.jpg');"></div>
+    <div class="menu-item-content">
+      <h3 class="menu-item-name">Red Onions</h3>
+      <p class="menu-item-description">Fresh and aromatic, essential in Filipino dishes.</p>
+      <div class="menu-item-bottom">
+        <div class="menu-item-price">₱60.00 / kg</div>
+        <div class="menu-item-btn"><i class="fas fa-plus"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Item 7 -->
+ 
+
+  <!-- Item 8 -->
+ 
+  <!-- Item 9 -->
+
+
+
+  <!-- Item 10 -->
+  <div class="menu-item">
+    <div class="menu-item-img" style="background-image: url('images/banana.jpg');"></div>
+    <div class="menu-item-content">
+      <h3 class="menu-item-name">Organic Bananas</h3>
+      <p class="menu-item-description">Chemical-free, perfect for snacking or smoothies.</p>
+      <div class="menu-item-bottom">
+        <div class="menu-item-price">₱69.00 / kg</div>
+        <div class="menu-item-btn"><i class="fas fa-plus"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add more below if you want more than 10 -->
+</div>
+        <div class="text-center mt-5">
+          <a href="items.html" class="btn btn-primary">View Full Items</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Section -->
+    <section class="special" id="special">
+      <div class="container special-container">
+        
+        <div class="special-grid">
+          <!-- Special Item 1 -->
+         
+          <!-- Special Item 2 -->
+       <div class="order-container">
+  <h2 class="order-text-center">Confirm your order.</h2>
+  <table class="order-table">
+  <thead>
+    <tr>
+      <th>Serial No.</th>
+      <th>Image</th>
+      <th>Food</th>
+      <th>Price</th>
+      <th>Qty</th>
+      <th>Total</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="cart-table-body">
+    <!-- JS will populate here -->
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="5">Total</th>
+      <th id="grand-total">₱0.00</th>
+      <th></th>
+    </tr>
+  </tfoot>
+</table>
+
+  <form class="order-form" id="order-form">
+    <fieldset>
+      <legend>Delivery Details</legend>
+
+      <p class="order-label">Full Name</p>
+      <input id="fullname" type="text" placeholder="Enter your name..." required />
+
+      <p class="order-label">Address</p>
+      <input id="address" type="text" placeholder="Enter your address..." required />
+
+      <p class="order-label">Phone No.</p>
+      <input id="phone" type="text" placeholder="Enter your phone..." required />
+
+      <p class="order-label">Email</p>
+      <input id="email" type="email" placeholder="Enter your email..." required />
+
+      <button class="order-btn-primary" id="checkout-btn">Confirm Order</button>
+    </fieldset>
+  </form>
+</div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+   
+
+    <!-- Order Section -->
+    <section class="order" id="contact">
+      <div class="container">
+       <div class="footer-grid">
+          <div>
+            <a href="#" class="footer-logo">GROCERY</a>
+            <p class="footer-text">
+              Enjoy the ease of doorstep delivery combined with quality you can trust. Shop fresh, fast, and hassle-free—your pantry’s best friend is just a click away.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="footer-social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer-social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="footer-social-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="footer-social-link"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li class="footer-link">
+                <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+              </li>
+              <li class="footer-link">
+                <a href="#about"
+                  ><i class="fas fa-chevron-right"></i> About Us</a
+                >
+              </li>
+              <li class="footer-link">
+                <a href="#menu"><i class="fas fa-chevron-right"></i> Items</a>
+              </li>
+              <li class="footer-link">
+                <a href="#special"
+                  ><i class="fas fa-chevron-right"></i> Orders</a
+                >
+              </li>
+             
+              
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Hours</h3>
+            <ul class="footer-links">
+              <li class="footer-link">
+                <a href="#">Monday - Friday: 8AM - 10PM</a>
+              </li>
+              <li class="footer-link"><a href="#">Saturday: 8AM - 11PM</a></li>
+              <li class="footer-link"><a href="#">Sunday: 8AM - 9PM</a></li>
+              <li class="footer-link"><a href="#">Order Online 9AM - 10PM</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Contact</h3>
+            <div class="footer-info">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                Borongan City
+              </div>
+            </div>
+            <div class="footer-info">
+              <i class="fas fa-phone-alt"></i>
+              <div>0912 345 6789</div>
+            </div>
+            <div class="footer-info">
+              <i class="fas fa-envelope"></i>
+              <div>groceryonline@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Online Grocery Premium Fast. All rights reserved. | Website
+            by <a href="">Grocery</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+   
+    <!-- Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <script src="script.js"></script>
+
+
+
+   <script>
+$(document).ready(function () {
+  // Handle checkout
+  $("#checkout-btn").click(function (event) {
+    event.preventDefault();
+
+    const fullName = $("#fullname").val().trim();
+    const address = $("#address").val().trim();
+    const phone = $("#phone").val().trim();
+    const email = $("#email").val().trim();
+
+    const rows = $("#cart-table-body tr");
+    const items = [];
+
+    rows.each(function () {
+      const $cells = $(this).find("td");
+
+      const name = $cells.eq(2).text().trim(); // Food Name
+      const price = $cells.eq(3).text().replace("₱", "").trim(); // Price
+      const quantity = parseInt($cells.eq(4).text().trim(), 10); // Quantity as text
+      const subtotal = $cells.eq(5).text().replace("₱", "").trim(); // Subtotal
+
+      if (quantity > 0) {
+        items.push({ name, price, quantity, subtotal });
+      }
+    });
+
+    if (!fullName || !address || !phone || !email || items.length === 0) {
+      alert("Please complete all fields and add at least one item.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("fullname", fullName);
+    formData.append("address", address);
+    formData.append("phone", phone);
+    formData.append("email", email);
+    formData.append("items", JSON.stringify(items));
+
+    $.ajax({
+  type: "POST",
+  url: "php/save_order.php",
+  data: formData,
+  processData: false,
+  contentType: false,
+  success: function (response) {
+    try {
+      const result = JSON.parse(response);
+      if (result.status == 1) {
+        alert("Order saved successfully!");
+
+        // Clear fields
+        $("#fullname, #address, #phone, #email").val("");
+        $("#cart-table-body").empty();
+        $("#grand-total").text("₱0.00");
+        localStorage.removeItem("cart");
+
+        // ✅ Auto reload the page
+        window.location = "index.html";
+      } else {
+        alert("Failed to save order: " + result.message);
+      }
+    } catch (e) {
+      console.error("Unexpected server response:", response);
+      alert("Unexpected response from server.");
+    }
+  },
+  error: function (xhr, status, error) {
+    alert("AJAX error: " + error);
+  }
+});
+  });
+
+  // Cart handling
+  const addButtons = document.querySelectorAll(".menu-item-btn");
+  const cartCount = document.querySelector(".cart-count");
+  const cartTableBody = document.getElementById("cart-table-body");
+  const grandTotalCell = document.getElementById("grand-total");
+
+  let cart = {};
+  let sn = 1;
+
+  addButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const menuItem = button.closest(".menu-item");
+      const name = menuItem.querySelector(".menu-item-name").textContent.trim();
+      const priceText = menuItem.querySelector(".menu-item-price").textContent.trim();
+      const price = parseFloat(priceText.replace("₱", "").replace(",", "").split(" ")[0]);
+
+      const bgImageStyle = menuItem.querySelector(".menu-item-img").style.backgroundImage;
+      const imageUrl = bgImageStyle.slice(5, -2); // Removes `url("...")` format
+
+      const uniqueId = `${name}-${imageUrl}`.replace(/[^a-zA-Z0-9]/g, "_");
+
+      if (cart[uniqueId]) {
+        // Update existing
+        cart[uniqueId].qty += 1;
+        cart[uniqueId].total = cart[uniqueId].qty * price;
+
+        const row = document.getElementById(`row-${uniqueId}`);
+        row.querySelector(".cart-qty").textContent = cart[uniqueId].qty;
+        row.querySelector(".cart-total").textContent = `₱${cart[uniqueId].total.toFixed(2)}`;
+      } else {
+        // Add new
+        cart[uniqueId] = {
+          sn: sn++,
+          name,
+          price,
+          qty: 1,
+          total: price,
+          imageUrl,
+        };
+
+        const newRow = document.createElement("tr");
+        newRow.id = `row-${uniqueId}`;
+        newRow.innerHTML = `
+          <td>${cart[uniqueId].sn}</td>
+          <td><img src="${imageUrl}" alt="${name}" width="50"/></td>
+          <td>${name}</td>
+          <td>₱${price.toFixed(2)}</td>
+          <td class="cart-qty">${cart[uniqueId].qty}</td>
+          <td class="cart-total">₱${cart[uniqueId].total.toFixed(2)}</td>
+          <td><button onclick="removeFromCart('${uniqueId}')">Delete</button></td>
+        `;
+        cartTableBody.appendChild(newRow);
+      }
+
+      updateCartDisplay();
+
+      // Optional bounce effect
+      button.style.transform = "scale(1.2)";
+      setTimeout(() => {
+        button.style.transform = "";
+      }, 200);
+    });
+  });
+
+  function updateCartDisplay() {
+    const totalItems = Object.values(cart).reduce((sum, item) => sum + item.qty, 0);
+    const totalPrice = Object.values(cart).reduce((sum, item) => sum + item.total, 0);
+    cartCount.textContent = totalItems;
+    grandTotalCell.textContent = `₱${totalPrice.toFixed(2)}`;
+  }
+
+  window.removeFromCart = function (id) {
+    if (cart[id]) {
+      document.getElementById(`row-${id}`).remove();
+      delete cart[id];
+      updateCartDisplay();
+    }
+  };
+});
+</script>
+
+
+
+
+  </body>
+</html>
